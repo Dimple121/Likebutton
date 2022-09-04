@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+        .circle{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: rgb(233, 209, 250);
+            border: 3px solid rgb(93, 4, 156);
+            border-radius: 50%;
+            box-shadow: 0 0 30px rgb(93, 4, 156),0 0 30px rgb(252, 169, 183);
+        }
+        .circle1{
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            left: calc(50% - 45px);
+            top: calc(50% - 45px);
+            border-radius: 50%;
+            border: 5px solid rgb(93, 4, 156);
+            /* transition: all 1s ease-in; */
+        }
+        .circle2{
+            position: absolute;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            width: 80px;
+            height: 80px;
+            background-color: indigo;
+            transition: all 2s ease;
+        }
+        .circle1:hover .circle2{
+            position: absolute;
+            width: 260px;
+        }
+       .circle3 h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 100%;
+        height: 100%;
+        font-size: 35px;
+        left: 0;
+        color: rgb(239, 242, 245);
+        position: absolute;
+        transition: all 1s ease;
+        opacity: 0;
+       }
+       .circle4{
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: calc(50% - 25px);
+        top: calc(50% - 25px);
+        /* background-color: aqua; */
+        transition: all 2s ease;
+       }
+       .circle1:hover .circle4{
+        position: absolute;
+        /* background-color: antiquewhite; */
+        left: 170px;
+        transform: rotate(360deg);
+       }
+       .circle1:hover h1{
+        left: 70px;
+        opacity: 1;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle">
+            <div class="circle1">
+            <div class="circle2">
+                <div class="circle3">
+                    <div class="circle4"><img src="https://img.icons8.com/external-icongeek26-outline-gradient-icongeek26/50/000000/external-like-donation-and-charity-icongeek26-outline-gradient-icongeek26.png"/></div>
+                    <h1>Like!</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
